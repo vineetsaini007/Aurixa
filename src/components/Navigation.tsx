@@ -79,7 +79,7 @@ const Navigation = () => {
               isScrolled ? 'text-xl' : 'text-2xl'
             }`}>
               <img 
-                src="/public/png logo.png" 
+                src="/public/final logo.png" 
                 alt="Aurixa Logo" 
                 className={`transition-all duration-300 object-contain ${
                   isScrolled ? 'h-8 w-auto' : 'h-10 w-auto'
