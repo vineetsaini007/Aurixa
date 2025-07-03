@@ -78,14 +78,7 @@ const Navigation = () => {
             <Link to="/" className={`nav-item flex items-center space-x-3 font-bold text-white transition-all duration-300 ${
               isScrolled ? 'text-xl' : 'text-2xl'
             }`}>
-              <img 
-                src="/public/final logo.png" 
-                alt="Aurixa Logo" 
-                className={`transition-all duration-300 object-contain ${
-                  isScrolled ? 'h-8 w-auto' : 'h-10 w-auto'
-                }`}
-                style={{ aspectRatio: '681/324' }}
-              />
+              
               <span>Aurixa</span>
               </Link>
           </div>
