@@ -114,15 +114,15 @@ const AuraStudios = () => {
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="text-center">
-              <div className="text-4xl font-bold text-golden-400 mb-2">1000+</div>
+              <div className="text-4xl font-bold text-white mb-2">50+</div>
               <div className="text-gray-400">Creative Projects</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-golden-400 mb-2">50M+</div>
+              <div className="text-4xl font-bold text-white mb-2">50M+</div>
               <div className="text-gray-400">Content Views</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-golden-400 mb-2">15+</div>
+              <div className="text-4xl font-bold text-white mb-2">15+</div>
               <div className="text-gray-400">Awards Won</div>
             </div>
           </div>
