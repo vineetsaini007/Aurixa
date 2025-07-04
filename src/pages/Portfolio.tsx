@@ -186,15 +186,15 @@ const Portfolio = () => {
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="text-center">
-              <div className="text-4xl font-bold text-golden-400 mb-2">500+</div>
+              <div className="text-4xl font-bold text-white mb-2">50+</div>
               <div className="text-gray-400">Projects Completed</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-golden-400 mb-2">98%</div>
+              <div className="text-4xl font-bold text-white mb-2">98%</div>
               <div className="text-gray-400">Client Satisfaction</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-golden-400 mb-2">25+</div>
+              <div className="text-4xl font-bold text-white mb-2">25+</div>
               <div className="text-gray-400">Industry Awards</div>
             </div>
           </div>
