@@ -1,15 +1,11 @@
 
 "use client";
 
-import { useLocation } from 'react-router-dom';
-
 import { Suspense, lazy } from 'react'
 // @ts-ignore
 const Spline = lazy(() => import('@splinetool/react-spline'))
 
 const HeroSplineBackground = () => {
-
-  const location = useLocation();
   return (
     <div style={{
       position: 'relative',
@@ -25,7 +21,6 @@ const HeroSplineBackground = () => {
             height: '100vh',
             pointerEvents: 'auto',
           }}
-          key ={location.pathname} // Ensure the Spline component re-renders on route change
           scene="https://prod.spline.design/us3ALejTXl6usHZ7/scene.splinecode"
         />
       </Suspense>
