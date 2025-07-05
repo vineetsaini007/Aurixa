@@ -35,7 +35,7 @@ const HeroSplineBackground = () => {
             linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent 30%, transparent 70%, rgba(0, 0, 0, 0.8)),
             linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.9))
           `,
-          pointerEvents: 'none',
+          pointerEvents: 'auto',
         }}
       />
     </div>
