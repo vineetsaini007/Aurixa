@@ -5,7 +5,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' blob:; connect-src 'self' https://prod.spline.design; img-src 'self' data: https:; media-src 'self' https://prod.spline.design; frame-src https://my.spline.design; style-src 'self' 'unsafe-inline';"
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://www.googletagmanager.com; connect-src 'self' https://prod.spline.design https://www.google-analytics.com; img-src 'self' data: https:; media-src 'self' https://prod.spline.design; frame-src https://my.spline.design; style-src 'self' 'unsafe-inline';"
         },
         {
           "key": "Strict-Transport-Security",
