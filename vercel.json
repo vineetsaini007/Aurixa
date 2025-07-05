@@ -5,28 +5,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://www.googletagmanager.com https://overbridgenet.com; connect-src 'self' https://prod.spline.design https://www.google-analytics.com https://overbridgenet.com; img-src 'self' data: https:; media-src 'self' https://prod.spline.design; frame-src https://my.spline.design; style-src 'self' 'unsafe-inline';"
-        },
-        {
-          "key": "Strict-Transport-Security",
-          "value": "max-age=63072000; includeSubDomains; preload"
-        },
-        {
-          "key": "Cross-Origin-Opener-Policy",
-          "value": "same-origin"
-        },
-        {
-          "key": "Cross-Origin-Embedder-Policy",
-          "value": "require-corp"
-        }
-      ]
-    },
-    {
-      "source": "/assets/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
+          "value": "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://unpkg.com https://cdn.jsdelivr.net https://*.splinetool.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; connect-src *; font-src 'self' https://fonts.gstatic.com; frame-src *"
         }
       ]
     }
