@@ -68,7 +68,7 @@ function App() {
       <div className="min-h-screen relative overflow-hidden">
     
         <div className="fixed top-0 left-0 w-screen h-screen z-0 ">
-       <HeroSplineBackground />
+        
 
         </div>
 
