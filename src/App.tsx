@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import Loader from './components/Loader';
 import { useState, useEffect , useRef } from 'react';
 import PageTransition from './components/PageTransition';
-//import Balatro from './components/Balatro';
+import Aurora from './components/aurora';
 import Home from './pages/Home';
 import AuraLabs from './pages/AuraLabs';
 import AuraBoost from './pages/AuraBoost';
@@ -14,7 +14,7 @@ import AboutUs from './pages/AboutUs';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import FAQ from './pages/FAQ';
-import HeroSplineBackground from './components/HeroSplineBackground';
+
 import { gsap } from 'gsap';
 
 function App() {
@@ -68,7 +68,13 @@ function App() {
       <div className="min-h-screen relative overflow-hidden">
     
         <div className="fixed top-0 left-0 w-screen h-screen z-0 ">
-        
+  
+<Aurora
+  colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
+  blend={0.5}
+  amplitude={1.0}
+  speed={0.5}
+/>
 
         </div>
 
