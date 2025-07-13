@@ -4,7 +4,22 @@ export default {
     content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
   	extend: {fontFamily: {
-        inter: ['Inter', 'sans-serif'],},
+        /*  Apple‑first system stack  */
+        apple: [
+          // Apple’s own UI fonts (show up automatically on macOS/iOS)
+          '-apple-system',
+          'BlinkMacSystemFont',       // fallback for Chrome on macOS
+          '"SF Pro Text"',            // newer macOS
+          '"SF Pro Display"',         // newer macOS
+          '"Helvetica Neue"',         // older macOS
+          'Helvetica',
+          'Arial',
+          // Open‑source fallback that looks close on Windows/Linux
+          'Inter',
+          'Roboto',
+          'sans-serif',
+        ],
+      },
   		colors: {
 			//'hsl(var(--background))',
   			background: '#000000',

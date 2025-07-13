@@ -74,7 +74,7 @@ const Navigation = () => {
             : 'bg-transparent'
         } ${isScrolled ? 'h-14' : 'h-16'} flex justify-between items-center ${isScrolled ? 'px-6' : ''}`}>
           
-          <div className="flex-shrink-0">
+          <div className="font-apple flex-shrink-0">
             <Link to="/" className={`nav-item flex items-center space-x-3 font-bold text-white transition-all duration-300 ${
               isScrolled ? 'text-xl' : 'text-2xl'
             }`}>
@@ -84,7 +84,7 @@ const Navigation = () => {
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
+          <div className="font-apple hidden md:block">
             <div className={`flex items-baseline transition-all duration-300 ${
               isScrolled ? 'space-x-6' : 'ml-10 space-x-8'
             }`}>

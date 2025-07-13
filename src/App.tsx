@@ -73,7 +73,7 @@ function App() {
   colorStops={["#00076f", "#e54ed0", "#44008b"]}
   blend={0.5}
   amplitude={1.0}
-  speed={0.4}
+  speed={0.5}
 />
 
         </div>

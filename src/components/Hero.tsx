@@ -110,14 +110,14 @@ const Hero = () => {
           
           <div className="space-y-8 text-center max-w-4xl" ref={contentRef}>
             
-            <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
-              Elevate Your
-              <span className="block text-transparent bg-clip-text bg-white">
-                Digital Presence
+            <h1 className="font-apple text-5xl md:text-7xl font-bold text-white leading-tight">
+              When We Build
+              <span className="font-apple block text-transparent bg-clip-text bg-white">
+                Others Redesign
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-white leading-relaxed">
+            <p className="font-apple text-xl md:text-2xl text-white leading-relaxed">
               Transforming businesses through cutting-edge technology, strategic growth, and creative excellence. 
               We craft digital experiences that captivate and convert.
             </p>
@@ -125,15 +125,15 @@ const Hero = () => {
             <div className="grid grid-cols-3 gap-8 py-8 max-w-2xl mx-auto">
               <div className="text-center">
                 <div className="text-3xl font-bold text-white">50+</div>
-                <div className="text-sm text-white uppercase tracking-wider">Projects Delivered</div>
+                <div className="font-apple text-sm text-white uppercase tracking-wider">Projects Delivered</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-white">98%</div>
-                <div className="text-sm text-white uppercase tracking-wider">Client Satisfaction</div>
+                <div className="font-apple text-sm text-white uppercase tracking-wider">Client Satisfaction</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-white">24/7</div>
-                <div className="text-sm text-white uppercase tracking-wider">Support Available</div>
+                <div className="font-apple text-sm text-white uppercase tracking-wider">Support Available</div>
               </div>
             </div>
             
@@ -152,7 +152,7 @@ const Hero = () => {
   />
 
   {/* Content on top of gradient */}
-  <span className="relative z-10 flex items-center space-x-2 text-white">
+  <span className="font-apple relative z-10 flex items-center space-x-2 text-white">
     <span>Explore Our Services</span>
     <ArrowRight
       size={20}
@@ -165,7 +165,7 @@ const Hero = () => {
               <div className="relative" ref={dropdownRef}>
                 <button
   onClick={() => setShowContactDropdown(!showContactDropdown)}
-  className="group relative inline-flex items-center justify-center
+  className="font-apple group relative inline-flex items-center justify-center
              px-8 py-4 rounded-lg font-medium overflow-hidden
              text-gray-300 transition-all duration-300
              bg-white/10 backdrop-blur-sm border border-white/20 hover:border-white/40"
@@ -179,7 +179,7 @@ const Hero = () => {
   />
 
   {/* content */}
-  <span className="relative z-10 flex items-center space-x-2 text-white">
+  <span className="font-apple relative z-10 flex items-center space-x-2 text-white">
     <MessageCircle size={20} />
     <span>Contact&nbsp;Us</span>
     <ChevronUp
