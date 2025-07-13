@@ -115,7 +115,7 @@ const AuraLabs = () => {
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="text-center">
-              <div className="text-4xl font-bold text-white mb-2">500+</div>
+              <div className="text-4xl font-bold text-white mb-2">50+</div>
               <div className="text-gray-400">Projects Delivered</div>
             </div>
             <div className="text-center">
