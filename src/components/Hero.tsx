@@ -163,14 +163,34 @@ const Hero = () => {
 
               
               <div className="relative" ref={dropdownRef}>
-                <button 
-                  onClick={() => setShowContactDropdown(!showContactDropdown)}
-                  className="group text-gray-300 hover:text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 bg-white/10 backdrop-filter backdrop-blur-sm border border-white/20 hover:border-white/40 hover:bg-white/20 flex items-center justify-center space-x-2"
-                >
-                  <MessageCircle size={20} />
-                  <span>Contact Us</span>
-                  <ChevronUp size={16} className={`transition-transform duration-300 ${showContactDropdown ? 'rotate-180' : ''}`} />
-                </button>
+                <button
+  onClick={() => setShowContactDropdown(!showContactDropdown)}
+  className="group relative inline-flex items-center justify-center
+             px-8 py-4 rounded-lg font-medium overflow-hidden
+             text-gray-300 transition-all duration-300
+             bg-white/10 backdrop-blur-sm border border-white/20 hover:border-white/40"
+>
+  {/* gradient layer */}
+  <span
+    className="absolute inset-0
+               bg-gradient-to-r from-[#3A29FF] via-[#FF94B4] to-[#FF3232]
+               opacity-0 group-hover:opacity-100
+               transition-opacity duration-300"
+  />
+
+  {/* content */}
+  <span className="relative z-10 flex items-center space-x-2 text-white">
+    <MessageCircle size={20} />
+    <span>Contact&nbsp;Us</span>
+    <ChevronUp
+      size={16}
+      className={`transition-transform duration-300 ${
+        showContactDropdown ? 'rotate-180' : ''
+      }`}
+    />
+  </span>
+</button>
+
 
                 {/* Contact Drop-up Menu */}
                 {showContactDropdown && (
