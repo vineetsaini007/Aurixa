@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import Loader from './components/Loader';
 import { useState, useEffect , useRef } from 'react';
 import PageTransition from './components/PageTransition';
-import Aurora from './components/aurora';
+import Aurora from './components/Aurora';
 import Home from './pages/Home';
 import AuraLabs from './pages/AuraLabs';
 import AuraBoost from './pages/AuraBoost';
