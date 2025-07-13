@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import Loader from './components/Loader';
 import { useState, useEffect , useRef } from 'react';
 import PageTransition from './components/PageTransition';
-import Aurora from './components/aurora';
+import Aurora from './components/Aurora';
 import Home from './pages/Home';
 import AuraLabs from './pages/AuraLabs';
 import AuraBoost from './pages/AuraBoost';
@@ -70,10 +70,10 @@ function App() {
         <div className="fixed top-0 left-0 w-screen h-screen z-0 ">
   
 <Aurora
-  colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
+  colorStops={["#00076f", "#e54ed0", "#44008b"]}
   blend={0.5}
   amplitude={1.0}
-  speed={0.5}
+  speed={0.4}
 />
 
         </div>

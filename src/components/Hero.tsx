@@ -138,13 +138,29 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button
-                onClick={scrollToServices}
-                className="group text-gray-300 hover:text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 bg-white/10 backdrop-filter backdrop-blur-sm border border-white/20 hover:border-white/40 hover:bg-white/20 flex items-center justify-center space-x-2"
-              >
-                <span>Explore Our Services</span>
-                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-300" />
-              </button>
+             <button
+  onClick={scrollToServices}
+  className="group relative inline-flex items-center justify-center
+             px-8 py-4 rounded-lg font-medium overflow-hidden
+             text-gray-300 transition-all duration-300
+             bg-white/10 backdrop-blur-sm border border-white/20 hover:border-white/40"
+>
+  {/* Gradient Layer */}
+  <span
+    className="absolute inset-0 bg-gradient-to-r from-[#3A29FF] via-[#FF94B4] to-[#FF3232]
+               opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+  />
+
+  {/* Content on top of gradient */}
+  <span className="relative z-10 flex items-center space-x-2 text-white">
+    <span>Explore Our Services</span>
+    <ArrowRight
+      size={20}
+      className="transition-transform duration-300 group-hover:translate-x-1"
+    />
+  </span>
+</button>
+
               
               <div className="relative" ref={dropdownRef}>
                 <button 
