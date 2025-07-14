@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { ArrowRight, MessageCircle, Instagram, Mail, ChevronUp } from 'lucide-react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
+import { CountUp } from '@/utils/CountUp';
 gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
@@ -124,15 +124,39 @@ const Hero = () => {
             
             <div className="grid grid-cols-3 gap-8 py-8 max-w-2xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl font-bold text-white">50+</div>
+                <div className="text-3xl font-bold text-white">
+                  <CountUp
+                    from={0}
+                    to={50}
+                    separator=","
+                    direction="up"
+                    duration={1}
+                    className="count-up-text"
+                  />
+                  +
+                </div>
                 <div className="font-apple text-sm text-white uppercase tracking-wider">Projects Delivered</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-white">98%</div>
+                <div className="text-3xl font-bold text-white"><CountUp
+                    from={0}
+                    to={98}
+                    separator=","
+                    direction="up"
+                    duration={1}
+                    className="count-up-text"
+                  />%</div>
                 <div className="font-apple text-sm text-white uppercase tracking-wider">Client Satisfaction</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-white">24/7</div>
+                <div className="text-3xl font-bold text-white"><CountUp
+                    from={0}
+                    to={24}
+                    separator=","
+                    direction="up"
+                    duration={1}
+                    className="count-up-text"
+                  />/7</div>
                 <div className="font-apple text-sm text-white uppercase tracking-wider">Support Available</div>
               </div>
             </div>
