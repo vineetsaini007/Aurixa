@@ -176,8 +176,8 @@ const Hero = () => {
   onClick={scrollToServices}
   className="group relative inline-flex items-center justify-center
              px-8 py-4 rounded-lg font-medium overflow-hidden
-             text-gray-300 transition-all duration-300
-             bg-white/10 backdrop-blur-sm border border-white/20 hover:border-white/40"
+             text-black transition-all duration-300
+             bg-white backdrop-blur-sm border border-white/20 hover:border-white/40"
 >
   {/* Gradient Layer */}
   <span
@@ -186,7 +186,7 @@ const Hero = () => {
   />
 
   {/* Content on top of gradient */}
-  <span className="font-apple relative z-10 flex items-center space-x-2 text-white">
+  <span className="font-apple relative z-10 flex items-center space-x-2 text-black group-hover:text-white">
     <span>Explore Our Services</span>
     <ArrowRight
       size={20}
