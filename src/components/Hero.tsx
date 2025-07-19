@@ -111,7 +111,7 @@ const Hero = () => {
           
           <div className="space-y-8 text-center max-w-4xl" ref={contentRef}>
             
-            <h1 className="font-apple text-5xl md:text-7xl font-bold text-white leading-tight">
+            <h1 className="font-apple text-5xl md:text-6xl text-white leading-tight">
               When We Build
               <span className="font-apple block text-transparent bg-clip-text bg-white">
                 Others <RotatingText
@@ -124,18 +124,14 @@ const Hero = () => {
   staggerDuration={0.025}
   splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
   transition={{ type: "spring", damping: 30, stiffness: 400 }}
-  rotationInterval={2000}
+  rotationInterval={3000}
   auto ={true}
   loop={true} 
 />
               </span>
             </h1>
             
-            <p className="font-apple text-xl md:text-2xl text-white leading-relaxed">
-              Transforming businesses through cutting-edge technology, strategic growth, and creative excellence. 
-              We craft digital experiences that captivate and convert.
-            </p>
-            
+           
             <div className="grid grid-cols-3 gap-8 py-8 max-w-2xl mx-auto">
               <div className="text-center">
                 <div className="text-3xl font-bold text-white">
