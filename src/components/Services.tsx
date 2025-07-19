@@ -167,7 +167,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24" ref={sectionRef}>
+    <section id="services" className="py-5" ref={sectionRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-20" ref={headerRef}>
@@ -181,14 +181,12 @@ const Services = () => {
               Infinite Possibilities
             </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Specialized teams working in perfect harmony to deliver comprehensive digital transformation
-          </p>
+          
         </div>
 
         <div ref={servicesRef}>
           {/* Service Navigation */}
-          <div className="flex justify-center mb-16">
+          <div className="flex justify-center mb-8">
             <div className="relative">
               <div className="flex bg-white/10 backdrop-filter backdrop-blur-sm rounded-xl p-1 border border-white/20">
                 {services.map((service, index) => (
@@ -244,9 +242,7 @@ const Services = () => {
                         {service.subtitle}
                       </h3>
                       
-                      <p className="text-xl text-gray-300 leading-relaxed">
-                        {service.description}
-                      </p>
+                     
                     </div>
 
                     {/* Service Offerings */}
@@ -266,9 +262,7 @@ const Services = () => {
                                   <h4 className="text-lg font-semibold text-white group-hover:text-white transition-colors duration-300">
                                     {offering.title}
                                   </h4>
-                                  <span className="text-white text-sm font-medium whitespace-nowrap ml-4">
-                                    {offering.metric}
-                                  </span>
+                                  
                                 </div>
                                 <p className="text-gray-300 leading-relaxed text-sm">
                                   {offering.description}
@@ -284,7 +278,7 @@ const Services = () => {
 
                     {/* CTA Button */}
                     <div className="pt-6">
-                      <button className="group flex items-center space-x-2 bg-white hover:bg-gray-100 text-black px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg" 
+                      <button className="group flex items-center space-x-2 bg-white hover:bg-gray-100 text-black px-3 py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg" 
                       onClick={() => navigate(service.link)}
                       >
                         <span>Explore {service.title}</span>
